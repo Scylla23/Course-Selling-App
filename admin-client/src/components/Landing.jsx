@@ -13,10 +13,10 @@ export const Landing = () => {
         <Grid container style={{padding: "5vw"}}>
             <Grid item xs={12} md={6} lg={6}>
                 <div style={{marginTop: 100}}>
-                    <Typography variant={"h2"}>
-                        Coursera Admin
+                    <Typography variant={"h2"} fontWeight={'bold'} color={'#700e9a'} >
+                    SkillMastersPro 
                     </Typography>
-                    <Typography variant={"h5"}>
+                    <Typography variant={"h5"} color={'#B76ed7'} >
                         A place to learn, earn and grow
                     </Typography>
                     {!userLoading && !userEmail && <div style={{display: "flex", marginTop: 20}}>

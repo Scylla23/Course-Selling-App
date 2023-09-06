@@ -20,7 +20,7 @@ function App() {
         <RecoilRoot>
             <div style={{width: "100vw",
                 height: "100vh",
-                backgroundColor: "#eeeeee"}}
+                backgroundColor: "#E6E6FA"}}
             >
                     <Router>
                         <Appbar />

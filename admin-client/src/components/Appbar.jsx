@@ -21,12 +21,13 @@ function Appbar({}) {
             display: "flex",
             justifyContent: "space-between",
             padding: 4,
-            zIndex: 1
+            zIndex: 1,
+            backgroundColor:"#E6E6FA",
         }}>
             <div style={{marginLeft: 10, cursor: "pointer"}} onClick={() => {
                 navigate("/")
             }}>
-                <Typography variant={"h6"}>Coursera</Typography>
+                <Typography variant={"h5"} fontWeight="bold" color={'#0f1e6b'}>SkillMastersPro</Typography>
             </div>
     
             <div style={{display: "flex"}}>
@@ -70,7 +71,7 @@ function Appbar({}) {
             <div style={{marginLeft: 10, cursor: "pointer"}} onClick={() => {
                 navigate("/")
             }}>
-                <Typography variant={"h6"}>Coursera</Typography>
+                <Typography variant={"h5"} fontWeight="bold" color={'#0f1e6b'} >SkillMastersPro</Typography>
             </div>
     
             <div style={{display: "flex"}}>

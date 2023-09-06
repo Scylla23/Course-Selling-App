@@ -35,6 +35,7 @@ export function Course({course}) {
         width: 300,
         minHeight: 200,
         padding: 20
+        
     }}>
         <Typography textAlign={"center"} variant="h5">{course.title}</Typography>
         <Typography textAlign={"center"} variant="subtitle1">{course.description}</Typography>
