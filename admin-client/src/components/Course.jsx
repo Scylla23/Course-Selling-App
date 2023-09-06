@@ -67,7 +67,7 @@ function UpdateCard() {
     const [price, setPrice] = useState(courseDetails.course.price);
 
     return <div style={{display: "flex", justifyContent: "center"}}>
-    <Card varint={"outlined"} style={{maxWidth: 600, marginTop: 200  } }>
+    <Card varint={"outlined"} style={{maxWidth: 600, marginTop: 200 ,borderRadius: 20, } }>
         <div style={{padding: 20}}>
             <Typography style={{marginBottom: 10}}>Update course details</Typography>
             <TextField
