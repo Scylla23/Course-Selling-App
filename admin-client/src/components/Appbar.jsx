@@ -5,6 +5,8 @@ import { isUserLoading } from "../store/selectors/isUserLoading";
 import {useSetRecoilState, useRecoilValue} from "recoil";
 import { userState } from "../store/atoms/user.js";
 import { userEmailState } from "../store/selectors/userEmail"
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 function Appbar({}) {
     const navigate = useNavigate()
@@ -13,7 +15,11 @@ function Appbar({}) {
     const setUser = useSetRecoilState(userState);
 
     if (userLoading) {
-        return <></>
+        return <div style={{display: "flex",
+        alignItems: "center", justifyContent: "center",
+        height: "100%"}}>
+            <CircularProgress/>
+        </div>
     }
 
     if (userEmail) {
