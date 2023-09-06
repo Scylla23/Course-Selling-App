@@ -45,6 +45,8 @@ export function Course({course}) {
                 navigate("/course/" + course._id);
             }}>Edit</Button>
         </div>
+        <br></br>
+        <Typography textAlign={"center"} variant="h5">&#8377;{course.price}</Typography>
     </Card>
 
 }
