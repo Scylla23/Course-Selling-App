@@ -34,12 +34,13 @@ export function Course({course}) {
         margin: 10,
         width: 300,
         minHeight: 200,
-        padding: 20
+        padding: 20,
+        borderRadius:20
         
     }}>
         <Typography textAlign={"center"} variant="h5">{course.title}</Typography>
         <Typography textAlign={"center"} variant="subtitle1">{course.description}</Typography>
-        <img src={course.imageLink} style={{width: 300}} ></img>
+        <img src={course.imageLink} style={{width: 300 , height:200}} ></img>
         <div style={{display: "flex", justifyContent: "center", marginTop: 20}}>
             <Button variant="contained" size="large" onClick={() => {
                 navigate("/course/" + course._id);
